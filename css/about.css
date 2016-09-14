@@ -1,23 +1,28 @@
-.image{
-	float:left
+.image {
+    float: left;
 }
-.image img{
-	margin:30px 20px 10px 20px;
-	width:auto;
-	height:auto;
-	max-height:250;
-	max-width:250px;
+
+    .image img {
+        margin: 30px 20px 10px 20px;
+        width: auto;
+        height: auto;
+        max-height: 250;
+        max-width: 250px;
+    }
+
+.clear {
+    clear: both;
 }
-.clear{
-	clear:both;
+
+.aboutUs {
+    margin: 10px 10px;
+    padding: 10px 10px;
 }
-.aboutUs{
-	margin:10px 10px;
-	padding:10px 10px;
-}
-.aboutUs h2{
-	text-align:center;
-}
-.aboutUs p{
-	font-size:18px;
-}
+
+    .aboutUs h2 {
+        text-align: center;
+    }
+
+    .aboutUs p {
+        font-size: 18px;
+    }

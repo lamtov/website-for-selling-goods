@@ -1,9 +1,11 @@
-.ContactRow{
-	margin:20px;
+.ContactRow {
+    margin: 20px;
 }
-.ContactRow div .textbox{
-	width:98%;
-}
-.ContactRow span label{
-	font-size:16px;
-}
+
+    .ContactRow div .textbox {
+        width: 98%;
+    }
+
+    .ContactRow span label {
+        font-size: 16px;
+    }
