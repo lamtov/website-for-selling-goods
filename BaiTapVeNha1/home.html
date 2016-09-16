@@ -36,16 +36,12 @@ console.groupEnd("event");
 	<!--});-->
 
 	function openFunction(){
-		window.history.pushState('', '','newpage');
-	}
-		 function processAjaxData(response, urlPath){
-		 document.getElementById("content").innerHTML = response.html;
-		 document.title = response.pageTitle;
-		 window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+		window.history.pushState('', '','img.html');
+		document.forms[2].getElementsByTagName("img")[0].style.display="block";
 	}
 	function closeFunction(){
 	document.forms[1].getElementsByTagName("h1")[1].innerHTML="Close";
-	window.location.href="#";
+	window.history.pushState('', '','home.html');
 	document.forms[2].getElementsByTagName("img")[0].style.display="none";
 	}
 	function reloadFunction(){
