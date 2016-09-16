@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>  
+
+<form name="tvl" >
+<a href="link.html"></a>
+<input type="button" style="margin:0 auto" onClick="openFunction()" value="open"/>
+<input type="button" style="margin:0 auto" onClick="closeFunction()" value="close"/>
+<input type="button" style="margin:0 auto" onClick="reloadFunction()" value="reload"/>
+</form>
+<form>
+	<h1 style="display:inline">Command:</h1>
+	<h1 style="display:inline"></h1>
+</form>
+<form>
+<img src="about.jpg" style="display:inline"/>
+</form>
+
+<script type="text/javascript">
+<!--console.log(document.forms[0]);
+<!--console.log(document.forms["tvl"]["ip"]); -->
+<!--console.log(document.getElementsByTagName("input"));-->
+<!--console.log(document.forms[0].getElementsByTagName("input")[0].value);
+<!--$("#id") 		$(".class")-->
+console.group("event");
+console.groupEnd("event");
+
+</script>
+<script>
+	<!--$(document).ready(function(){
+	<!--$(".class").val("tvl");
+	<!--console.log($("#ip").val() + $(".class").val());
+	<!--});-->
+
+	function openFunction(){
+		window.history.pushState('', '','newpage');
+	}
+		 function processAjaxData(response, urlPath){
+		 document.getElementById("content").innerHTML = response.html;
+		 document.title = response.pageTitle;
+		 window.history.pushState({"html":response.html,"pageTitle":response.pageTitle},"", urlPath);
+	}
+	function closeFunction(){
+	document.forms[1].getElementsByTagName("h1")[1].innerHTML="Close";
+	window.location.href="#";
+	document.forms[2].getElementsByTagName("img")[0].style.display="none";
+	}
+	function reloadFunction(){
+	document.forms[1].getElementsByTagName("h1")[1].innerHTML="Reload";
+	location.reload();
+	}
+</script>
+
+
+
+</body>
